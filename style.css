@@ -1,0 +1,164 @@
+/* === Base Styling === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #f9fafb;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+  background: #f8fafc;
+  color: #1f2937;
+}
+
+/* === Header Theme Button === */
+header {
+  text-align: right;
+  padding: 1rem 2rem;
+}
+
+#themeToggle {
+  background-color: #fbbf24;
+  color: #111827;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* === Animated Heading === */
+h1#typewriter {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #facc15;
+}
+
+/* === Layout Container === */
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+/* === Panel Styling === */
+.panel {
+  background-color: #1e293b;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  width: 30%;
+  min-width: 300px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+  text-align: center;
+}
+
+body.light .panel {
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+/* === Panel Headings === */
+.panel-title {
+  font-size: 1.5rem;
+  color: #f472b6;
+  margin-bottom: 1rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body.light .panel-title {
+  color: #d946ef;
+}
+
+/* === Image Styling === */
+.ktm-logo,
+.bike-img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* === Button === */
+.button {
+  background-color: #facc15;
+  color: #111827;
+  border-radius: 9999px;
+  padding: 0.6rem 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #eab308;
+  color: white;
+  transform: scale(1.05);
+}
+
+body.light .button {
+  background-color: #111827;
+  color: #ffffff;
+}
+
+/* === Grid for Navigation Cards === */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+/* === Navigation Cards === */
+.card {
+  background-color: #334155;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+.card:hover {
+  transform: scale(1.08);
+  background-color: #6366f1;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+body.light .card {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+/* === Wager List === */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+
+li span {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* === Footer Note === */
+.follow-note {
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #38bdf8;
+}
